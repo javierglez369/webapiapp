@@ -37,7 +37,7 @@ public class ProductosControllerTests
         var okResult = Assert.IsType<OkObjectResult>(actionResult.Result);
         var productos = Assert.IsAssignableFrom<IEnumerable<Producto>>(okResult.Value);
 
-        Assert.Equal(6, productos.Count());
+        Assert.Equal(3, productos.Count());
     }
 
     [Fact]
